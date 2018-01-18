@@ -8,7 +8,7 @@
     <div class="breadcrumb-holder">
       <div class="container-fluid">
         <ul class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html" align="center"><font style="vertical-align: inherit;"><i class="fa fa-eye" aria-hidden="true"></i><font style="font-size:17px;vertical-align: inherit;">Monitoramento</font></font></a></li>
+          <li class="breadcrumb-item"><i class="fa fa-crosshairs" aria-hidden="true"></i><font style="font-size:17px;vertical-align: inherit;">Monitoramento</font></li>
         </ul>
       </div>
     </div>   
@@ -17,7 +17,7 @@
     <div class="breadcrumb-holder" style="margin-top: 15px">
       <div class="container-fluid">
         <ul class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html" align="center"><font style="vertical-align: inherit;"><font style=";font-size:17px;vertical-align: inherit;">Dados do Solicitante</font></font></a></li>
+          <li class="breadcrumb-item"><i class="fa fa-database" aria-hidden="true"></i><font style="font-size:17px;vertical-align: inherit;">Dados da ocorrência</font></li>
         </ul>
       </div>
     </div>
@@ -27,30 +27,30 @@
 
         <tbody>
           <tr>
-            <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Muncipio da ocorrência: </font></font></th>
-            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Teresina</font></font></td>
-            <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nome do solicitante : </font></font></th>
-            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Deusimar Teixeira da Silva Junior</font></font></td>
+            <th scope="row">Muncipio da ocorrência:</th>
+            <td>Teresina</td>
+            <th scope="row">Nome do solicitante:</th>
+            <td>Deusimar Teixeira da Silva Junior</td>
           </tr>
           <tr>
-            <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Local: </font></font></th>
-            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rua coronel elpidio</font></font></td>
-            <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nome do paciente:</font></font></th>
-            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;overflow: hidden;"> Deusimar Teixeira da Silva Junior</font></font></td>
-          </tr>
-
-          <tr>
-            <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ponto de referência: </font></font></th>
-            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Dogão </font></font></td>
-            <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zona:</font></font></th>
-            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Urbana</font></font></td>
+            <th scope="row">Local:</th>
+            <td>Rua coronel elpidio</td>
+            <th scope="row">Nome do paciente:</th>
+            <td>Deusimar Teixeira da Silva Junior</td>
           </tr>
 
           <tr>
-            <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Telefone: </font></font></th>
-            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(89) 99417-5533</font></font></td>
-            <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tipo:</font></font></th>
-            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Padrão </font></font></td>
+            <th scope="row">Ponto de referência:</th>
+            <td>Dogão</td>
+            <th scope="row">Zona:</th>
+            <td>Urbana</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Telefone:</th>
+            <td>(89) 99417-5533</td>
+            <th scope="row">Tipo:</th>
+            <td>Padrão</td>
           </tr>
         </tbody>
       </table>

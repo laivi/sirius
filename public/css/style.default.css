@@ -2300,7 +2300,7 @@ body {
 }
 
 a {
-  color: #33b35a;
+  color: #f03d2c;
   text-decoration: none;
 }
 
@@ -2903,3 +2903,11 @@ a > code {
 .clearfix:active{
   background:#CFCFCF;
 }
+.breadcrumb-item i{
+font-size: 20px;
+    margin-left: -32px;
+    margin-right: 25px;
+} 
+.font_vertical{
+	vertical-align: inherit;
+}   
