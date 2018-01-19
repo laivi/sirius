@@ -29,8 +29,8 @@
           <tr>
             <th scope="row">Muncipio da ocorrência:</th>
             <td>Teresina</td>
-            <th scope="row">Nome do solicitante:</th>
-            <td>Deusimar Teixeira da Silva Junior</td>
+            <th scope="row" >Nome do solicitante:</th>
+            <td >Deusimar Teixeira da Silva Junior</td>
           </tr>
           <tr>
             <th scope="row">Local:</th>
@@ -79,6 +79,12 @@
                   </div>
                 </div>
                 <div class="date"><small>5min ago</small></div>
+              </div>
+            </li>
+
+            <li class="clearfix btn btn-defoult" style="width: 100%">
+              <div class="feed d-flex justify-content-between" id="bigOne">
+                
               </div>
             </li>
 

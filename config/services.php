@@ -35,4 +35,12 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'firebase' => [
+        'api_key' => 'AIzaSyCebkSI0S5no1hiHQDwP1K-Co-TX_sTRzo',
+        'auth_domain' => 'my-p-9d3e3.firebaseapp.com',
+        'database_url' => 'https://my-p-9d3e3.firebaseio.com',
+        'secret' => '1yD5UHxMjm726FbLt1ftxQr6rmVVEsO1lLYQUFKI',
+        'storage_bucket' => 'my-p-9d3e3.appspot.com',
+    ]
+
 ];
