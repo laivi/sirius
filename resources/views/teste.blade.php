@@ -69,7 +69,7 @@
       </div>
       <div id="feeds-box" role="tabpanel" class="collapse show"  style="overflow: auto;">
         <div class="feed-box">
-          <ul class="feed-elements list-unstyled">
+          <ul class="feed-elements list-unstyled" id="list">
             <!-- List-->
             <li class="clearfix btn btn-defoult" style="width: 100%">
               <div class="feed d-flex justify-content-between">
@@ -81,100 +81,7 @@
                 <div class="date"><small>5min ago</small></div>
               </div>
             </li>
-
-            <li class="clearfix btn btn-defoult" style="width: 100%">
-              <div class="feed d-flex justify-content-between" id="bigOne">
-                
-              </div>
-            </li>
-
-            <li class="clearfix btn btn-defoult" style="width: 100%">
-              <div class="feed d-flex justify-content-between">
-                <div class="feed-body d-flex justify-content-between"><img src="img/avatar-icon.png" alt="person" class="img-fluid rounded-circle feed-profile">
-                  <div class="content"><strong>Aria Smith</strong><small>(89) 99456-4567 </small>
-                    <div class="full-date"><small>Hoje 5:60 pm </small></div>
-                  </div>
-                </div>
-                <div class="date"><small>5min ago</small></div>
-              </div>
-            </li>
-
-            <li class="clearfix btn btn-defoult" style="width: 100%">
-              <div class="feed d-flex justify-content-between">
-                <div class="feed-body d-flex justify-content-between"><img src="img/avatar-icon.png" alt="person" class="img-fluid rounded-circle feed-profile">
-                  <div class="content"><strong>Aria Smith</strong><small>(89) 99456-4567 </small>
-                    <div class="full-date"><small>Hoje 5:60 pm </small></div>
-                  </div>
-                </div>
-                <div class="date"><small>5min ago</small></div>
-              </div>
-            </li>
-
-            <li class="clearfix btn btn-defoult" style="width: 100%">
-              <div class="feed d-flex justify-content-between">
-                <div class="feed-body d-flex justify-content-between"><img src="img/avatar-icon.png" alt="person" class="img-fluid rounded-circle feed-profile">
-                  <div class="content"><strong>Aria Smith</strong><small>(89) 99456-4567 </small>
-                    <div class="full-date"><small>Hoje 5:60 pm </small></div>
-                  </div>
-                </div>
-                <div class="date"><small>5min ago</small></div>
-              </div>
-            </li>
-
-            <li class="clearfix btn btn-defoult" style="width: 100%">
-              <div class="feed d-flex justify-content-between">
-                <div class="feed-body d-flex justify-content-between"><img src="img/avatar-icon.png" alt="person" class="img-fluid rounded-circle feed-profile">
-                  <div class="content"><strong>Aria Smith</strong><small>(89) 99456-4567 </small>
-                    <div class="full-date"><small>Hoje 5:60 pm </small></div>
-                  </div>
-                </div>
-                <div class="date"><small>5min ago</small></div>
-              </div>
-            </li>
-
-            <li class="clearfix btn btn-defoult" style="width: 100%">
-              <div class="feed d-flex justify-content-between">
-                <div class="feed-body d-flex justify-content-between"><img src="img/avatar-icon.png" alt="person" class="img-fluid rounded-circle feed-profile">
-                  <div class="content"><strong>Aria Smith</strong><small>(89) 99456-4567 </small>
-                    <div class="full-date"><small>Hoje 5:60 pm </small></div>
-                  </div>
-                </div>
-                <div class="date"><small>5min ago</small></div>
-              </div>
-            </li>
-
-            <li class="clearfix btn btn-defoult" style="width: 100%">
-              <div class="feed d-flex justify-content-between">
-                <div class="feed-body d-flex justify-content-between"><img src="img/avatar-icon.png" alt="person" class="img-fluid rounded-circle feed-profile">
-                  <div class="content"><strong>Aria Smith</strong><small>(89) 99456-4567 </small>
-                    <div class="full-date"><small>Hoje 5:60 pm </small></div>
-                  </div>
-                </div>
-                <div class="date"><small>5min ago</small></div>
-              </div>
-            </li>
-
-            <li class="clearfix btn btn-defoult" style="width: 100%">
-              <div class="feed d-flex justify-content-between">
-                <div class="feed-body d-flex justify-content-between"><img src="img/avatar-icon.png" alt="person" class="img-fluid rounded-circle feed-profile">
-                  <div class="content"><strong>Aria Smith</strong><small>(89) 99456-4567 </small>
-                    <div class="full-date"><small>Hoje 5:60 pm </small></div>
-                  </div>
-                </div>
-                <div class="date"><small>5min ago</small></div>
-              </div>
-            </li>
-
-            <li class="clearfix btn btn-defoult" style="width: 100%">
-              <div class="feed d-flex justify-content-between">
-                <div class="feed-body d-flex justify-content-between"><img src="img/avatar-icon.png" alt="person" class="img-fluid rounded-circle feed-profile">
-                  <div class="content"><strong>Aria Smith</strong><small>(89) 99456-4567 </small>
-                    <div class="full-date"><small>Hoje 5:60 pm </small></div>
-                  </div>
-                </div>
-                <div class="date"><small>5min ago</small></div>
-              </div>
-            </li>   
+  
           </ul>
         </div>
       </div>

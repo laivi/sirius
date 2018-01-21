@@ -37,6 +37,7 @@
     
     <script src="{{ asset('vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{ asset('js/google.js')}}"></script>
+    <script src="{{ asset('js/custom.js')}}"></script>
     <script src="{{ asset('vendor/popper.js/umd/popper.min.js')}}"> </script>
     <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{ asset('js/grasp_mobile_progress_circle-1.0.0.min.js')}}"></script>
