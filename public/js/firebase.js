@@ -21,6 +21,7 @@ dbRef.on('child_added', snap => {
 	new_li.setAttribute('style', 'width: 100%');
 	new_li.setAttribute('id', snap.key);
 	new_li.setAttribute('onClick', 'select_li('+JSON.stringify(object)+');');
+	$.playSound("http://www.noiseaddicts.com/samples_1w72b820/3724.mp3");
 	var div_avo = document.createElement("DIV");
 	div_avo.setAttribute('class', 'feed d-flex justify-content-between');
 	var div_pai = document.createElement("DIV");
@@ -60,6 +61,8 @@ dbRef.on("child_removed", snap => {
    	element.parentNode.removeChild(element);
     contarElementos();
 });
+
+
 
 
 
