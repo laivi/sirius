@@ -14,7 +14,7 @@
     </div>   
     <div id="map"></div>
     
-    <div id="cab_dados" class="breadcrumb-holder " style="margin-top: 15px" >
+    <div id="cab_dados" class="breadcrumb-holder none " style="margin-top: 15px" >
       <div class="container-fluid">
         <ul class="breadcrumb">
           <li class="breadcrumb-item"><i class="fa fa-database" aria-hidden="true"></i><font style="font-size:17px;vertical-align: inherit;">Dados da ocorrência</font></li>
@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <div id="body_dados" class="card-body">
+    <div id="body_dados" class="card-body none">
       <table class="table table-hover">
 
         <tbody>
@@ -76,7 +76,7 @@
       </div>
     </div>
     <a class="btn"  data-toggle="modal" data-target=".bs-example-modal-sm-cancel" style="width: 49.5%;padding: 10px;background: #e9ecef;margin-top: -15px;background: #0C9"><i class="fa fa-check" aria-hidden="true"></i><br> Repassar</a>
-    <a class="btn"  data-toggle="modal" data-target=".bs-example-modal-sm" style="width: 49.5%;padding: 10px;background: #e9ecef;margin-top: -15px;background: #C00"> <i class="fa fa-times" aria-hidden="true"></i><br>Recusar</a>
+    <a class="btn" id="btn_cancel" data-toggle="modal" data-target=".bs-example-modal-sm" style="width: 49.5%;padding: 10px;background: #e9ecef;margin-top: -15px;background: #C00"> <i class="fa fa-times" aria-hidden="true"></i><br>Recusar</a>
   </div>
 </div>
 @stop

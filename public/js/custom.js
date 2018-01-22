@@ -1,11 +1,12 @@
-function select_li(object) {
+function select_li(object, key) {
 	document.getElementById('cab_dados').classList.remove('none');
 	document.getElementById('body_dados').classList.remove('none');
+	document.getElementById('btn_cancel').setAttribute('onClick','accept_oco('+key+')');
 	document.getElementById('map').setAttribute('style', 'height: 40vh;');
 	
-	document.getElementById("municipio").innerText = "null";
+	document.getElementById("municipio").innerText = object.localizacao.municipio;
 	document.getElementById("solicitante").innerText = object.solicitante;
-	document.getElementById("local").innerText = "null";
+	document.getElementById("local").innerText = object.localizacao.local;
 	document.getElementById("ref").innerText = object.localizacao.referencia;
 	document.getElementById("zona").innerText = object.localizacao.zona;	
 	document.getElementById("tel").innerText = object.contato.telefone;
@@ -20,5 +21,6 @@ function contarElementos(){
  	var n_element = document.getElementById("num_element");
  	n_element.innerText=lis.length+" mensagens";	
 }
+
 
 
