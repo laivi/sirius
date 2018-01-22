@@ -18,7 +18,7 @@ dbRef.on('child_added', snap => {
 	new_li.setAttribute('class', 'clearfix btn btn-defoult');
 	new_li.setAttribute('style', 'width: 100%');
 	new_li.setAttribute('id', snap.key);
-	new_li.setAttribute('onClick', 'select_li('+object+')');
+	new_li.setAttribute('onClick', 'select_li('+JSON.stringify(object)+');');
 	var div_avo = document.createElement("DIV");
 	div_avo.setAttribute('class', 'feed d-flex justify-content-between');
 	var div_pai = document.createElement("DIV");
