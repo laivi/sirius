@@ -18,7 +18,6 @@ var fila = firebase.database().ref('fila_central/aguardando');
 fila.on('child_added', snap => {
  	var key = snap.key;
  	var value = snap.val();
- 	console.log(value);
  	if(value == true){
 	 	dbRef.child(key).on('value', snap2 => { 
 		   	var object = snap2.val();
@@ -58,6 +57,7 @@ fila.on('child_added', snap => {
 			div_filha.appendChild(div_neta);
 			div_neta.appendChild(small_hora);
 			list.insertBefore(new_li, list.childNodes[0]);  // Insert <li> before the first child of <ul>
+			$.playSound("http://www.noiseaddicts.com/samples_1w72b820/3724.mp3");
 			contarElementos();
 		});
 	}
