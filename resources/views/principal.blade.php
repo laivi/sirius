@@ -5,7 +5,7 @@
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Sirirus</title>
 
@@ -42,8 +42,6 @@
     <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{ asset('js/grasp_mobile_progress_circle-1.0.0.min.js')}}"></script>
     <script src="{{ asset('vendor/jquery.cookie/jquery.cookie.js')}}"> </script>
-    <!--<script src="{{ asset('vendor/chart.js/Chart.min.js')}}"></script>
-    <script src="{{ asset('js/charts-home.js')}}"></script>-->
     <script src="{{ asset('vendor/jquery-validation/jquery.validate.min.js')}}"></script>
     <script src="{{ asset('vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js')}}"></script>
     <!-- Main File-->
@@ -51,9 +49,10 @@
     <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
     <script src="{{ asset('js/firebase.js')}}"></script>
+    
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv2dAI4ZALFsfMzsAmynw6gmk_spa2EfU&callback=initMap">
-    </script>
+    </script> 
 
 </body>
 </html>

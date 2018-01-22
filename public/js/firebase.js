@@ -8,17 +8,19 @@ var config = {
    	storageBucket: "my-p-9d3e3.appspot.com",
    	messagingSenderId: "585837304892"
 };
+
 firebase.initializeApp(config);
 var database = firebase.database();
+
 var dbRef = firebase.database().ref('ocorrencias');
 dbRef.on('child_added', snap => { 
    	var object = snap.val();
-   	var list = document.getElementById("list");    // Get the <ul> element to insert a new node
-	var new_li = document.createElement("LI");       // Create a <li> node
+   	var list = document.getElementById("list");    
+	var new_li = document.createElement("LI");       
 	new_li.setAttribute('class', 'clearfix btn btn-defoult');
 	new_li.setAttribute('style', 'width: 100%');
 	new_li.setAttribute('id', snap.key);
-	new_li.setAttribute('onClick', 'select_li('+object+')');
+	new_li.setAttribute('onClick', 'select_li('+JSON.stringify(object)+');');
 	var div_avo = document.createElement("DIV");
 	div_avo.setAttribute('class', 'feed d-flex justify-content-between');
 	var div_pai = document.createElement("DIV");
@@ -49,13 +51,17 @@ dbRef.on('child_added', snap => {
 	div_filha.appendChild(div_neta);
 	div_neta.appendChild(small_hora);
 	list.insertBefore(new_li, list.childNodes[0]);  // Insert <li> before the first child of <ul>
+	contarElementos();
 });
 
 dbRef.on("child_removed", snap => {
    	var deletedPost = snap.key;
    	var element = document.getElementById(deletedPost);
    	element.parentNode.removeChild(element);
+    contarElementos();
 });
+
+
 
 
 
