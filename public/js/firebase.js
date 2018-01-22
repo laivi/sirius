@@ -13,13 +13,14 @@ firebase.initializeApp(config);
 var database = firebase.database();
 
 var dbRef = firebase.database().ref('ocorrencias');
-var fila = firebase.database().ref('fila_central/aguardando');
+var aten_ag = firebase.database().ref('fila_central/aguardando');
+var aten_aten = firebase.database().ref('fila_central/atendendo');
 
-fila.on('child_added', snap => {
+aten_ag.on('child_added', snap => {
  	var key = snap.key;
  	var value = snap.val();
- 	if(value == true){
-	 	dbRef.child(key).on('value', snap2 => { 
+	dbRef.child(key).on('value', snap2 => { 
+		if(value == "true"){
 		   	var object = snap2.val();
 		   	var list = document.getElementById("list");    
 			var new_li = document.createElement("LI");       
@@ -46,6 +47,7 @@ fila.on('child_added', snap => {
 			var small_hora = document.createElement("SMALL");
 			small_hora.innerText = object.hora;
 			var div_tempo = document.createElement("DIV");
+			
 			div_tempo.setAttribute('class', 'date');
 			new_li.appendChild(div_avo); 
 			div_avo.appendChild(div_pai);
@@ -57,24 +59,34 @@ fila.on('child_added', snap => {
 			div_filha.appendChild(div_neta);
 			div_neta.appendChild(small_hora);
 			list.insertBefore(new_li, list.childNodes[0]);  // Insert <li> before the first child of <ul>
-			$.playSound("http://www.noiseaddicts.com/samples_1w72b820/3724.mp3");
+			$.playSound("http://toquesparabaixar.com/download2/iPhone_SMS_v2_www.ToquesParaBaixar.com.mp3");
 			contarElementos();
-		});
-	}
+		}	
+	});
+	
 });
 
 // verifica quando a ocorrencia sair da fila de espera.
-fila.on("child_changed", snap => {
+aten_ag.on("child_changed", snap => {
    	var deletedPost = snap.key;
    	var valuePost = snap.val();
-   	if(valuePost == false){
+   	if(valuePost == "false"){
 	   	var element = document.getElementById(deletedPost);
 	   	element.parentNode.removeChild(element);
 	    contarElementos();
 	}
 });
 
-
+function accept_oco(key){
+	console.log(key);
+	aten_ag.update({[key]:"false"});
+	aten_aten.update({[key]:"true"});
+}
+function stop_oco(key){
+	console.log(key);
+	aten_ag.update({[key]:"false"});
+	aten_aten.update({[key]:"false"});
+}
 
 
 

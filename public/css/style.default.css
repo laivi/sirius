@@ -2914,3 +2914,7 @@ font-size: 20px;
 .none{
   display: none;
 }   
+
+.content{
+	text-align: left;
+}
