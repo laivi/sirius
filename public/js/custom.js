@@ -1,7 +1,8 @@
 function select_li(object, key) {
 	document.getElementById('cab_dados').classList.remove('none');
 	document.getElementById('body_dados').classList.remove('none');
-	document.getElementById('btn_cancel').setAttribute('onClick','accept_oco('+key+')');
+	document.getElementById('btn_cancel').setAttribute('onClick','stop_oco('+JSON.stringify(key)+')');
+	document.getElementById('btn_accept').setAttribute('onClick','accept_oco('+JSON.stringify(key)+')');
 	document.getElementById('map').setAttribute('style', 'height: 40vh;');
 	
 	document.getElementById("municipio").innerText = object.localizacao.municipio;

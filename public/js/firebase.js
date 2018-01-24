@@ -1,13 +1,13 @@
 // Initialize Firebase
 var json_fire;
 var config = {
- 	apiKey: "AIzaSyCebkSI0S5no1hiHQDwP1K-Co-TX_sTRzo", 
-   	authDomain: "my-p-9d3e3.firebaseapp.com",
-   	databaseURL: "https://my-p-9d3e3.firebaseio.com",
-   	projectId: "my-p-9d3e3",
-   	storageBucket: "my-p-9d3e3.appspot.com",
-   	messagingSenderId: "585837304892"
-};
+    apiKey: "AIzaSyBsaoO_dfCrgQ7jYXHMd11pIbo_PleicwI",
+    authDomain: "sirius-666.firebaseapp.com",
+    databaseURL: "https://sirius-666.firebaseio.com",
+    projectId: "sirius-666",
+    storageBucket: "sirius-666.appspot.com",
+    messagingSenderId: "178245427359"
+  };
 
 firebase.initializeApp(config);
 var database = firebase.database();
@@ -21,13 +21,14 @@ aten_ag.on('child_added', snap => {
  	var value = snap.val();
 	dbRef.child(key).on('value', snap2 => { 
 		if(value == "true"){
+			console.log(snap2.key.toString());
 		   	var object = snap2.val();
 		   	var list = document.getElementById("list");    
 			var new_li = document.createElement("LI");       
 			new_li.setAttribute('class', 'clearfix btn btn-defoult');
 			new_li.setAttribute('style', 'width: 100%');
 			new_li.setAttribute('id', snap.key);
-			new_li.setAttribute('onClick', 'select_li('+JSON.stringify(object)+','+snap2.key+');');
+			new_li.setAttribute('onClick', 'select_li('+JSON.stringify(object)+','+JSON.stringify(snap2.key)+');');
 			var div_avo = document.createElement("DIV");
 			div_avo.setAttribute('class', 'feed d-flex justify-content-between');
 			var div_pai = document.createElement("DIV");

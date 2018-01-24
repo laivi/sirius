@@ -75,7 +75,8 @@
         </div>
       </div>
     </div>
-    <a class="btn"  data-toggle="modal" data-target=".bs-example-modal-sm-cancel" style="width: 49.5%;padding: 10px;background: #e9ecef;margin-top: -15px;background: #0C9"><i class="fa fa-check" aria-hidden="true"></i><br> Repassar</a>
+    <a class="btn" id="btn_accept" data-toggle="modal" data-target=".bs-example-modal-sm-cancel" style="width: 49.5%;padding: 10px;background: #e9ecef;margin-top: -15px;background: #0C9"><i class="fa fa-check" aria-hidden="true"></i><br> Repassar</a>
+
     <a class="btn" id="btn_cancel" data-toggle="modal" data-target=".bs-example-modal-sm" style="width: 49.5%;padding: 10px;background: #e9ecef;margin-top: -15px;background: #C00"> <i class="fa fa-folder-open-o" aria-hidden="true"></i><br>Arquivar</a>
   </div>
 </div>
