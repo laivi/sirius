@@ -31,7 +31,7 @@
             
     <div class="page" style="max-height:90vh">
         @include ('header')
-        @yield('conteudo')        
+        @yield('conteudo')
     </div> 
     @include ('footer')
     
@@ -53,6 +53,8 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv2dAI4ZALFsfMzsAmynw6gmk_spa2EfU&callback=initMap">
     </script> 
+
+    @yield('scripts')
 
 </body>
 </html>
