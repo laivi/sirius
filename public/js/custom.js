@@ -1,10 +1,10 @@
 function select_li(object, key) {
+	central_atendendo(key);
 	document.getElementById('cab_dados').classList.remove('none');
 	document.getElementById('body_dados').classList.remove('none');
-	document.getElementById('btn_cancel').setAttribute('onClick','stop_oco('+JSON.stringify(key)+')');
-	document.getElementById('btn_accept').setAttribute('onClick','accept_oco('+JSON.stringify(key)+')');
+	document.getElementById('btn_repassar').setAttribute('onClick','central_encaminhar('+JSON.stringify(key)+')');
+	document.getElementById('btn_arquivar').setAttribute('onClick','arquivar('+JSON.stringify(key)+')');
 	document.getElementById('map').setAttribute('style', 'height: 40vh;');
-	
 	document.getElementById("municipio").innerText = object.localizacao.municipio;
 	document.getElementById("solicitante").innerText = object.solicitante;
 	document.getElementById("local").innerText = object.localizacao.local;
@@ -17,6 +17,7 @@ function select_li(object, key) {
 	var lat = object.localizacao.lat;
 	map(long,lat);
 }
+
 function contarElementos(){
  	var lis = document.getElementById("list").getElementsByTagName('li');
  	var n_element = document.getElementById("num_element");

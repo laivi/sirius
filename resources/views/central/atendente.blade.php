@@ -75,9 +75,33 @@
         </div>
       </div>
     </div>
-    <a class="btn" id="btn_accept" data-toggle="modal" data-target=".bs-example-modal-sm-cancel" style="width: 49.5%;padding: 10px;background: #e9ecef;margin-top: -15px;background: #0C9"><i class="fa fa-check" aria-hidden="true"></i><br> Repassar</a>
 
-    <a class="btn" id="btn_cancel" data-toggle="modal" data-target=".bs-example-modal-sm" style="width: 49.5%;padding: 10px;background: #e9ecef;margin-top: -15px;background: #C00"> <i class="fa fa-folder-open-o" aria-hidden="true"></i><br>Arquivar</a>
+    <a class="btn" data-toggle="modal" data-target=".bs-example-modal-sm-accept" style="width: 49.5%;padding: 10px;background: #e9ecef;margin-top: -15px;background: #0C9"><i class="fa fa-check" aria-hidden="true"></i><br> Repassar</a>
+
+    <div id="myModal" class="modal fade bs-example-modal-sm-accept" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content" style="margin-left:-20vh;width: 80vh;height: 40vh;border-radius: 5px;">  
+          <div style="background:#0C9;color:white;width: 100%; text-align: center;">
+            <h3 style="font-size: 18px;padding: 10px">Repassar ocorrencia<h3>
+          </div>
+          <a class="btn btn_modal" id="btn_repassar">Repassar</a>          
+        </div>
+      </div>  
+    </div>
+
+    <a class="btn"  data-toggle="modal" data-target=".bs-example-modal-sm" style="width: 49.5%;padding: 10px;background: #e9ecef;margin-top: -15px;background: #C00"> <i class="fa fa-folder-open-o" aria-hidden="true"></i><br>Arquivar</a>
+
+    <div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content" style="margin-left:-20vh;width: 80vh;height: 40vh;border-radius: 5px;">  
+          <div style="background: red;width: 100%; text-align: center;">
+            <h3 style="font-size: 18px;padding: 10px">Arquivar ocorrencia<h3>
+          </div>
+          <a class="btn btn_modal" id="btn_arquivar">Arquivar</a>             
+        </div>
+      </div>  
+    </div>
+
   </div>
 </div>
 @stop

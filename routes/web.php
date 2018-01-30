@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/inicio', function () {
-    return view('teste');
+Route::get('/atendente', function () {
+    return view('central/atendente');
+});
+Route::get('/home', function () {
+    return view('home');
+});
+Route::get('/medico', function () {
+    return view('central/medico');
+});
+Route::get('/medico_fila', function () {
+    return view('central/medico_fila');
 });
