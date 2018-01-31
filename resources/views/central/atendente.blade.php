@@ -56,7 +56,7 @@
     </div>
   </div>
 
-   <div class="col-lg-4 col-md-6" style="float: right;margin-left:-5px;">
+  <div class="col-lg-4 col-md-6" style="float: right;margin-left:-5px;">
     <!-- Daily Feed Widget-->
     <div id="daily-feeds" class="card updates daily-feeds" style="max-height:70vh;height: 70vh">
       <div id="feeds-header" class="card-header d-flex justify-content-between align-items-center">
@@ -111,6 +111,7 @@
     
   var central_ag = firebase.database().ref('fila_central/aguardando');
   var central_at = firebase.database().ref('fila_central/atendendo');
+  var med_ag = firebase.database().ref('fila_medico/aguardando');
 
   // Insere o li(card) da ocorrencia na lista de espera da cenral 
   central_ag.on('child_added', snap => {
@@ -187,6 +188,7 @@
   }
   
   function central_encaminhar(key){
+    console.log(key);
     central_at.child(key).remove();
     banco.child(key).update({status:"fila_medico"});
     med_ag.update({[key]:"medico_aguardando"});

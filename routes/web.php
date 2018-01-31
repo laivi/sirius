@@ -17,9 +17,9 @@ Route::get('/atendente', function () {
 Route::get('/home', function () {
     return view('home');
 });
-Route::get('/medico', function () {
-    return view('central/medico');
-});
+
 Route::get('/medico_fila', function () {
     return view('central/medico_fila');
 });
+
+Route::get('/ocorrencia/{key}/show', 'OcorrenciaController@show'); 

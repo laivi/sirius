@@ -114,7 +114,7 @@ h2 {
 }
 
 .breadcrumb-holder .breadcrumb {
-  padding: 1.5vh 0;
+  padding: 1.1vh 0;
   font-size: 0.85em;
   font-weight: 300;
   color: #999;
@@ -1286,7 +1286,7 @@ input.form-control-custom {
 }
 
 input.form-control-custom:checked + label::before {
-  background: #33b35a !important;
+  background: red !important;
 }
 
 input.form-control-custom:checked + label::after {
@@ -2930,17 +2930,35 @@ font-size: 20px;
   color:#868686;
   border-radius: 5px;
 }
+
 .img_home{
   margin-left: 25%;
   margin-top: 100px;
   width: 50%;
 }
+
 .btn_modal{
-  width: 25%;
+  width: 80%;
   border-radius: 5px;
   padding: 5px;
-  margin-top:150px;
+  margin-top:5vh;
   background:rgba(129, 129, 129, 0.24);
   color: white;
-  margin-left: 360px
+  margin-left: 10%;
 } 
+
+.line {
+  display: block;
+  width: 100%;
+  border: none;
+  color: #333;
+  background: transparent;
+  border-bottom: 1px solid gainsboro;
+  padding: 5px 2px 0 2px;
+  margin-bottom: 25px
+}
+
+.line:focus { 
+  outline: none;
+  border-color: red;
+}
