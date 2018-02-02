@@ -85,7 +85,7 @@ table {
 }
 
 .badge.badge-primary {
-  background: #33b35a;
+  background:#9E9E9E;
 }
 
 .page {
@@ -988,6 +988,7 @@ nav.navbar a.menu-btn:hover {
 
 .daily-feeds .badge {
   margin-right: 10px;
+  width: 100%;
 }
 
 .daily-feeds strong {
@@ -1118,7 +1119,7 @@ footer.main-footer {
   width: 100%;
   bottom: 0;
   background:gainsboro;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 footer.main-footer p {
@@ -2907,6 +2908,11 @@ font-size: 20px;
     margin-left: -32px;
     margin-right: 25px;
 } 
+.right-column{
+    margin-top: 3px;
+    width: 90%;
+    margin-left: 5%;
+}
 .font_vertical{
 	vertical-align: inherit;
 }
@@ -2935,6 +2941,7 @@ font-size: 20px;
   margin-left: 25%;
   margin-top: 100px;
   width: 50%;
+  text-decoration:none; 
 }
 
 .btn_modal{
@@ -2945,7 +2952,23 @@ font-size: 20px;
   background:rgba(129, 129, 129, 0.24);
   color: white;
   margin-left: 10%;
-} 
+}
+.btn_repassar{
+  width: 49.5%;
+  margin-bottom: -10px
+  margin-top: -5px;
+  background:#0C9;
+  height: 55px;
+  padding: 5px;
+}
+.btn_arquivar{
+  width: 49.5%;
+  margin-bottom: -10px
+  margin-top: -5px;
+  background: #F55;
+  height: 55px;
+  padding: 5px;
+}  
 
 .line {
   display: block;

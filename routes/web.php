@@ -22,4 +22,8 @@ Route::get('/medico_fila', function () {
     return view('central/medico_fila');
 });
 
+Route::get('/base', function () {
+    return view('base');
+});
+
 Route::get('/ocorrencia/{key}/show', 'OcorrenciaController@show'); 

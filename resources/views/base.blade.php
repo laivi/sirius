@@ -12,6 +12,7 @@
       </div>
     </div>   
     <div id="map"></div>
+    
     <div id="cab_dados" class="breadcrumb-holder none " style="margin-top: 15px" >
       <div class="container-fluid">
         <ul class="breadcrumb">
@@ -61,7 +62,7 @@
             <div style="background:#0C9;color:white;width: 100%; text-align: center;">
               <h3 style="font-size: 18px;padding: 10px">Repassar ocorrencia<h3>
               </div>
-              <a class="btn btn_modal" id="btn_repassar">Repassar</a>          
+              <a class="btn btn_modal" id="btn_repassar">Aceitar</a>          
             </div>
           </div>  
         </div>
@@ -86,7 +87,7 @@
         <div id="daily-feeds" class="card updates daily-feeds" style="max-height:85vh;height: 85vh">
           <div class="breadcrumb-holder" ">
             <ul class="breadcrumb">
-              <li class="breadcrumb-item" style="width: 100%;text-align: center;"><font style="font-size:17px;vertical-align: inherit;">Atendimentos Pendentes </font></li>
+              <li class="breadcrumb-item" style="width: 100%;text-align: center;"><font style="font-size:17px;vertical-align: inherit;">Ocorrências Pendentes </font></li>
               <div class="right-column">
                 <div class="badge badge-primary" id="num_element"></div>
               </div>
@@ -104,19 +105,20 @@
       </div>
     </div>
 
-    @stop
+@stop
 
-    @section('scripts')
+@section('scripts')
 
-    <script type="text/javascript">
-
-      var central_ag = firebase.database().ref('fila_central/aguardando');
-      var central_at = firebase.database().ref('fila_central/atendendo');
-      var med_ag = firebase.database().ref('fila_medico/aguardando');
+<script type="text/javascript">
+    
+ 
+  var base_ag = firebase.database().ref('fila_base/aguardando');
+  var base_at = firebase.database().ref('fila_base/atendendo');
+  var base_en = firebase.database().ref('fila_base/encaminhado');
 
   // Insere o li(card) da ocorrencia na lista de espera da cenral 
-  central_ag.on('child_added', snap => {
-
+  base_ag.on('child_added', snap => {
+    
     var key = snap.key;
     var value = snap.val();
 
@@ -128,7 +130,7 @@
       new_li.setAttribute('class', 'clearfix btn btn-defoult');
       new_li.setAttribute('style', 'width: 100%');
       new_li.setAttribute('id', snap.key);
-      new_li.setAttribute('onClick', 'select_li('+JSON.stringify(object)+','+JSON.stringify(snap2.key)+');');
+      new_li.setAttribute('onClick', 'select_li_base('+JSON.stringify(object)+','+JSON.stringify(snap2.key)+');');
       var div_avo = document.createElement("DIV");
       div_avo.setAttribute('class', 'feed d-flex justify-content-between');
       var div_pai = document.createElement("DIV");
@@ -165,7 +167,7 @@
   });
 
   // verifica quando a ocorrencia sair da fila de espera da central.
-  central_ag.on("child_removed", snap => {
+  base_ag.on("child_removed", snap => {
     tira_lista(snap.key)
     contarElementos();
   });
@@ -176,23 +178,23 @@
     element.parentNode.removeChild(element);
   }
   
-  function central_atendendo(key){
-    central_ag.child(key).remove();
-    central_at.update({[key]:"central_atendendo"});
+  function base_atendendo(key){
+    base_ag.child(key).remove();
+    base_at.update({[key]:"base_atendendo"});
   }
   
   function arquivar(key){
-    central_at.child(key).remove();
+    base_at.child(key).remove();
     banco.child(key).update({status:"arquivada"});
     tira_lista(key);
     
   }
   
-  function central_encaminhar(key){
+  function base_encaminhar(key){
     console.log(key);
-    central_at.child(key).remove();
-    banco.child(key).update({status:"fila_medico"});
-    med_ag.update({[key]:"medico_aguardando"});
+    base_at.child(key).remove();
+    base_en.child(key).update({status:"base_encaminhado"});
+    banco.child(key).update({status:"A caminho"});
   }
 
 </script>

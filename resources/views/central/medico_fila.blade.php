@@ -1,21 +1,26 @@
 @extends('principal')
 @section('conteudo')
 
-<div id="daily-feeds" class="card updates daily-feeds" style="margin-top: 20px;margin-left: 30%;max-width: 40%; max-height:70vh;height: 70vh">
-      <div id="feeds-header" class="card-header d-flex justify-content-between align-items-center">
-        <h2 class="h5 display">Ocorrências em espera</h2>
-        <div class="right-column">
-          <div class="badge badge-primary" id="num_element"></div>
+        <!-- Daily Feed Widget-->
+        <div id="daily-feeds" class="card updates daily-feeds" style="margin-top: 20px;margin-left: 30%;max-width: 40%; max-height:70vh;height: 70vh">
+          <div class="breadcrumb-holder" ">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item" style="width: 100%;text-align: center;"><font style="font-size:17px;vertical-align: inherit;">Ocorrências em espera</font></li>
+              <div class="right-column">
+                <div class="badge badge-primary" id="num_element"></div>
+              </div>
+            </ul>
+          </div>   
+
+          <div id="feeds-box" role="tabpanel" class="collapse show"  style="overflow: auto;">
+            <div class="feed-box">
+              <ul class="feed-elements list-unstyled" id="list_med">
+                <!-- List-->
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <div id="feeds-box" role="tabpanel" class="collapse show"  style="overflow: auto;">
-        <div class="feed-box">
-          <ul class="feed-elements list-unstyled" id="list_med">
-            <!-- List-->
-          </ul>
-        </div>
-      </div>
-    </div>
 @stop
 
 @section('scripts')

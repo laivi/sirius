@@ -7,7 +7,7 @@
                   <div class="brand-text d-none d-md-inline-block"><img style="margin-top: -10px;margin-bottom: -10px" width="120px" src="{{ asset('img/logo.png')}}"></div></a></div>
               <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
                 
-                <li class="nav-item"><a href="/home" class="nav-link logout">Voltar<i class="fa fa-sign-out"></i></a></li>
+                <li class="nav-item" style="background: #9e9e9e;border-radius: 2px"><a href="/home" class="nav-link logout">Voltar<i class="fa fa-sign-out"></i></a></li>
               </ul>
             </div>
           </div>

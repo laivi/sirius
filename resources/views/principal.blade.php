@@ -33,7 +33,7 @@
         @include ('header')
         @yield('conteudo')
     </div> 
-    @include ('footer')
+   @include ('footer')
     
     <script src="{{ asset('vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{ asset('js/google.js')}}"></script>
