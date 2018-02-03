@@ -244,7 +244,7 @@
                   <div class="i-checks">
                     <input id="c_med_17" type="checkbox" value="" class="form-control-custom">
                     <label for="c_med_17"> 
-                      Urgêrncia Psiquiatra
+                      Urgência Psiquiatra
                     </label>
                   </div>
                 </td>
