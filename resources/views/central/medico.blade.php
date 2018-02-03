@@ -307,7 +307,7 @@ var med_at = firebase.database().ref('fila_medico/atendendo');
       atendimento.update({dados_clinicos:document.getElementById("dados_c").value,prioridade:document.getElementById("prioridade").value,dados_paciente:document.getElementById("dados_p").value});
         banco.child('{{$key}}').update({status:"fila_base"});
         med_at.child(key).remove();
-        base_ag.update({[key]:"base_aguardando"});
+        base_ag.update({[key]:"true"});
         window.location.assign("/medico_fila");
     }
 

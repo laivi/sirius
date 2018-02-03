@@ -54,13 +54,13 @@
         </tbody>
       </table>
 
-      <a class="btn btn_repassar" data-toggle="modal" data-target=".bs-example-modal-sm-accept" ><i class="fa fa-check" aria-hidden="true"></i><br> Repassar</a>
+      <a class="btn btn_repassar" data-toggle="modal" data-target=".bs-example-modal-sm-accept" ><i class="fa fa-check" aria-hidden="true"></i><br> Aceitar</a>
 
-      <div id="myModal" class="modal fade bs-example-modal-sm-accept" tabindex="-1" role="dialog" aria-hidden="true">
+      <div id="Aceitar_modal" class="modal fade bs-example-modal-sm-accept" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm">
-          <div class="modal-content">  
+          <div class="modal-content" style="margin-left:-20vh;width: 80vh;height: 40vh;border-radius: 5px;">  
             <div style="background:#0C9;color:white;width: 100%; text-align: center;">
-              <h3 style="font-size: 18px;padding: 10px">Repassar ocorrencia<h3>
+              <h3 style="font-size: 18px;padding: 10px">Aceitar Ocorrencia<h3>
               </div>
               <a class="btn btn_modal" id="btn_repassar">Aceitar</a>          
             </div>
@@ -69,11 +69,11 @@
 
         <a class="btn btn_arquivar"  data-toggle="modal" data-target=".bs-example-modal-sm"> <i class="fa fa-folder-open-o" aria-hidden="true"></i><br>Arquivar</a>
 
-        <div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+        <div id="Arquivar_modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog modal-sm">
             <div class="modal-content" style="margin-left:-20vh;width: 80vh;height: 40vh;border-radius: 5px;">  
               <div style="background: red;width: 100%; text-align: center;">
-                <h3 style="font-size: 18px;padding: 10px">Arquivar ocorrencia<h3>
+                <h3 style="font-size: 18px;padding: 10px">Arquivar Ocorrência<h3>
                 </div>
                 <a class="btn btn_modal" id="btn_arquivar">Arquivar</a>             
               </div>
@@ -180,21 +180,21 @@
   
   function base_atendendo(key){
     base_ag.child(key).remove();
-    base_at.update({[key]:"base_atendendo"});
+    base_at.update({[key]:"true"});
   }
   
   function arquivar(key){
     base_at.child(key).remove();
     banco.child(key).update({status:"arquivada"});
-    tira_lista(key);
+    $('#Arquivar_modal').modal('hide'); 
     
   }
   
   function base_encaminhar(key){
-    console.log(key);
     base_at.child(key).remove();
-    base_en.child(key).update({status:"base_encaminhado"});
+    base_en.update({[key]:"true"});;
     banco.child(key).update({status:"A caminho"});
+    $('#Aceitar_modal').modal('hide'); 
   }
 
 </script>

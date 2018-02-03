@@ -85,7 +85,7 @@
   
   function medico_atendendo(key){
     med_ag.child(key).remove();
-    med_at.update({[key]:"medico_atendendo"});
+    med_at.update({[key]:"true"});
     window.location.assign("/ocorrencia/"+key+"/show");
   }
 

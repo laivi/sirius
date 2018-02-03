@@ -55,9 +55,9 @@
 
       <a class="btn btn_repassar" data-toggle="modal" data-target=".bs-example-modal-sm-accept" ><i class="fa fa-check" aria-hidden="true"></i><br> Repassar</a>
 
-      <div id="myModal" class="modal fade bs-example-modal-sm-accept" tabindex="-1" role="dialog" aria-hidden="true">
+      <div id="Repassar_modal" class="modal fade bs-example-modal-sm-accept" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm">
-          <div class="modal-content">  
+          <div class="modal-content" style="margin-left:-20vh;width: 80vh;height: 40vh;border-radius: 5px;background: #f5f7fa">  
             <div style="background:#0C9;color:white;width: 100%; text-align: center;">
               <h3 style="font-size: 18px;padding: 10px">Repassar ocorrencia<h3>
               </div>
@@ -68,9 +68,9 @@
 
         <a class="btn btn_arquivar"  data-toggle="modal" data-target=".bs-example-modal-sm"> <i class="fa fa-folder-open-o" aria-hidden="true"></i><br>Arquivar</a>
 
-        <div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+        <div id="Arquivar_modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog modal-sm">
-            <div class="modal-content" style="margin-left:-20vh;width: 80vh;height: 40vh;border-radius: 5px;">  
+            <div class="modal-content" style="margin-left:-20vh;width: 80vh;height: 40vh;border-radius: 5px;background: #f5f7fa">  
               <div style="background: red;width: 100%; text-align: center;">
                 <h3 style="font-size: 18px;padding: 10px">Arquivar ocorrencia<h3>
                 </div>
@@ -178,21 +178,21 @@
   
   function central_atendendo(key){
     central_ag.child(key).remove();
-    central_at.update({[key]:"central_atendendo"});
+    central_at.update({[key]:"true"});
   }
   
   function arquivar(key){
     central_at.child(key).remove();
     banco.child(key).update({status:"arquivada"});
-    tira_lista(key);
-    
+    $('#Arquivar_modal').modal('hide'); 
   }
   
   function central_encaminhar(key){
-    console.log(key);
+    console.log("modal aqui");
     central_at.child(key).remove();
     banco.child(key).update({status:"fila_medico"});
-    med_ag.update({[key]:"medico_aguardando"});
+    med_ag.update({[key]:"true"});
+    $('#Repassar_modal').modal('hide'); 
   }
 
 </script>
