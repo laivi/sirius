@@ -98,7 +98,12 @@
             <div class="feed-box">
               <ul class="feed-elements list-unstyled" id="list">
                 <!-- List-->
-              </ul>
+                <div id="5"><!-- Nível de prioridade--></div>
+                <div id="4"><!-- Nível de prioridade--></div>
+                <div id="3"><!-- Nível de prioridade--></div>
+                <div id="2"><!-- Nível de prioridade--></div>
+                <div id="1"><!-- Nível de prioridade--></div>
+                </ul>
             </div>
           </div>
         </div>
@@ -125,7 +130,9 @@
     banco.child(key).once('value', snap2 => { 
       console.log(value);
       var object = snap2.val();
-      var list = document.getElementById("list");    
+      var prioridade = object.atendimento.prioridade;   
+      //Adiciona card de acordo com a prioridade   
+      var list = document.getElementById(prioridade);
       var new_li = document.createElement("LI");       
       new_li.setAttribute('class', 'clearfix btn btn-defoult');
       new_li.setAttribute('style', 'width: 100%');
