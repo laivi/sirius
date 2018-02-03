@@ -10,7 +10,7 @@ function initMap() {
   });
 }
 
-function map(long,lat) {
+function map(long,lat,key) {
   var uluru = {lat:lat,lng:long};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 17,
@@ -20,5 +20,23 @@ function map(long,lat) {
     position: uluru,
     map: map
   });
+  
+  //Geocode reverse + atualização no firebase(local e municipio)
+  var localizacao = firebase.database().ref('ocorrencias/'+key+'/localizacao');
+  console.log("aaaaaaa"+localizacao);
+  var latlng = new google.maps.LatLng(lat, long);
+  var geocoder = geocoder = new google.maps.Geocoder();
+  geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var endereco= results[0].formatted_address ;
+      var value=endereco.split(",");
+      var count=value.length;
+      var cidade=value[count-3];
+      document.getElementById("municipio").innerText = cidade;
+      document.getElementById("local").innerText = endereco;
+      localizacao.update({municipio:cidade});
+      localizacao.update({local:endereco});
+    }
+  }); 
 }
 
