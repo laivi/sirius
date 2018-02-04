@@ -23,7 +23,6 @@ function map(long,lat,key) {
   
   //Geocode reverse + atualização no firebase(local e municipio)
   var localizacao = firebase.database().ref('ocorrencias/'+key+'/localizacao');
-  console.log("aaaaaaa"+localizacao);
   var latlng = new google.maps.LatLng(lat, long);
   var geocoder = geocoder = new google.maps.Geocoder();
   geocoder.geocode({ 'latLng': latlng }, function (results, status) {
@@ -32,6 +31,8 @@ function map(long,lat,key) {
       var value=endereco.split(",");
       var count=value.length;
       var cidade=value[count-3];
+      value.splice(count-2, 2);
+      endereco=value.toString();
       document.getElementById("municipio").innerText = cidade;
       document.getElementById("local").innerText = endereco;
       localizacao.update({municipio:cidade});
