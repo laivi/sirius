@@ -22,7 +22,7 @@
     </div>
 
     <div id="body_dados" class="card-body none">
-      <table class="table table-hover">
+      <table class="table">
 
         <tbody>
           <tr>
@@ -45,12 +45,6 @@
             <td id="zona">Urbana</td>
           </tr>
 
-          <tr>
-            <th scope="row">Telefone:</th>
-            <td id="tel">(89) 99417-5533</td>
-            <th scope="row">Tipo:</th>
-            <td id="tipo">Padrão</td>
-          </tr>
         </tbody>
       </table>
 
@@ -97,6 +91,7 @@
           <div id="feeds-box" role="tabpanel" class="collapse show"  style="overflow: auto;">
             <div class="feed-box">
               <ul class="feed-elements list-unstyled" id="list">
+                
                 <!-- List-->
                 <div id="5"><!-- Nível de prioridade--></div>
                 <div id="4"><!-- Nível de prioridade--></div>
@@ -104,6 +99,7 @@
                 <div id="2"><!-- Nível de prioridade--></div>
                 <div id="1"><!-- Nível de prioridade--></div>
                 </ul>
+              <div style="position:relative; width: 20px;height: 20px; background: red"><div>  
             </div>
           </div>
         </div>
@@ -157,7 +153,11 @@
       var small_hora = document.createElement("SMALL");
       small_hora.innerText = object.hora;
       var div_tempo = document.createElement("DIV");
-      div_tempo.setAttribute('class', 'date');
+      div_tempo.setAttribute('class', 'date star_line');
+      for (var i = object.atendimento.prioridade -1; i >= 0; i--) {
+       div_tempo.innerHTML += "<i class='fa fa-star'></i>";
+      }
+
       new_li.appendChild(div_avo); 
       div_avo.appendChild(div_pai);
       div_avo.appendChild(div_tempo);

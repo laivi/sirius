@@ -26,8 +26,6 @@ function select_li_base(object, key) {
 	document.getElementById("solicitante").innerText = object.solicitante;
 	document.getElementById("ref").innerText = object.localizacao.referencia;
 	document.getElementById("zona").innerText = object.localizacao.zona;	
-	document.getElementById("tel").innerText = object.contato.telefone;
-	document.getElementById("tipo").innerText = object.tipo;
 	document.getElementById("paciente").innerText = object.paciente;
 	var long = object.localizacao.lgt;
 	var lat = object.localizacao.lat;

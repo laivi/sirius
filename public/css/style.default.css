@@ -2969,7 +2969,10 @@ font-size: 20px;
   height: 55px;
   padding: 5px;
 }  
-
+.star_line{
+  color: #daa520;
+  font-size: 15px;
+}
 .line {
   display: block;
   width: 100%;
