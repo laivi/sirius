@@ -91,7 +91,6 @@
           <div id="feeds-box" role="tabpanel" class="collapse show"  style="overflow: auto;">
             <div class="feed-box">
               <ul class="feed-elements list-unstyled" id="list">
-                
                 <!-- List-->
                 <div id="5"><!-- Nível de prioridade--></div>
                 <div id="4"><!-- Nível de prioridade--></div>
@@ -99,7 +98,6 @@
                 <div id="2"><!-- Nível de prioridade--></div>
                 <div id="1"><!-- Nível de prioridade--></div>
                 </ul>
-              <div style="position:relative; width: 20px;height: 20px; background: red"><div>  
             </div>
           </div>
         </div>
@@ -192,7 +190,7 @@
   
   function arquivar(key){
     base_at.child(key).remove();
-    banco.child(key).update({status:"arquivada"});
+    banco.child(key).update({situacao:"arquivada"});
     $('#Arquivar_modal').modal('hide'); 
     
   }
@@ -200,7 +198,7 @@
   function base_encaminhar(key){
     base_at.child(key).remove();
     base_en.update({[key]:"true"});;
-    banco.child(key).update({status:"A caminho"});
+    banco.child(key).update({situacao:"deslocando"});
     $('#Aceitar_modal').modal('hide'); 
   }
 

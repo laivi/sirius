@@ -305,7 +305,7 @@ var med_at = firebase.database().ref('fila_medico/atendendo');
 
     function medico_encaminhar(key){
       atendimento.update({dados_clinicos:document.getElementById("dados_c").value,prioridade:document.getElementById("prioridade").value,dados_paciente:document.getElementById("dados_p").value});
-        banco.child('{{$key}}').update({status:"fila_base"});
+        banco.child('{{$key}}').update({situacao:"fila_base"});
         med_at.child(key).remove();
         base_ag.update({[key]:"true"});
         window.location.assign("/medico_fila");
@@ -313,7 +313,7 @@ var med_at = firebase.database().ref('fila_medico/atendendo');
 
     function arquivar(key){
       med_at.child(key).remove();
-      banco.child(key).update({status:"arquivada"});    
+      banco.child(key).update({situacao:"arquivada"});    
     }
   
 </script>

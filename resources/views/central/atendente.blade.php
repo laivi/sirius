@@ -183,14 +183,14 @@
   
   function arquivar(key){
     central_at.child(key).remove();
-    banco.child(key).update({status:"arquivada"});
+    banco.child(key).update({situacao:"arquivada"});
     $('#Arquivar_modal').modal('hide'); 
   }
   
   function central_encaminhar(key){
     console.log("modal aqui");
     central_at.child(key).remove();
-    banco.child(key).update({status:"fila_medico"});
+    banco.child(key).update({situacao:"fila_medico"});
     med_ag.update({[key]:"true"});
     $('#Repassar_modal').modal('hide'); 
   }
