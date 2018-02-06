@@ -74,7 +74,7 @@
       div_filha.appendChild(small_telefone);
       div_filha.appendChild(div_neta);
       div_neta.appendChild(small_hora);
-      list.insertBefore(new_li, list.childNodes[0]);  // Insert <li> before the first child of <ul>
+      list.insertBefore(new_li, null);  // Insert <li> before the first child of <ul>
       $.playSound("http://toquesparabaixar.com/download2/iPhone_SMS_v2_www.ToquesParaBaixar.com.mp3");
       //contarElementos();
     });
