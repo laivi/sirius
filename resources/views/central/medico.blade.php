@@ -114,7 +114,7 @@
                 </td>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_2" type="checkbox" value="Acidente com animais peçonhentos" class="form-control-custom">
+                    <input id="c_med_2" type="checkbox" value="Acidente com outros animais" class="form-control-custom">
                     <label for="c_med_2"> 
                       Acidente com outros animais 
                     </label>
@@ -122,7 +122,7 @@
                 </td>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_3" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_3" type="checkbox" value="Acidente de trânsito" class="form-control-custom">
                     <label for="c_med_3"> 
                       Acidente de trânsito
                     </label>
@@ -130,7 +130,7 @@
                 </td>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_4" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_4" type="checkbox" value="Afogamento" class="form-control-custom">
                     <label for="c_med_4"> 
                       Afogamento
                     </label>
@@ -140,7 +140,7 @@
               <tr>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_5" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_5" type="checkbox" value="Urgência Obstétrica" class="form-control-custom">
                     <label for="c_med_5"> 
                       Urgência Obstétrica
                     </label>
@@ -148,7 +148,7 @@
                 </td>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_6" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_6" type="checkbox" value="Arma Branca" class="form-control-custom">
                     <label for="c_med_6"> 
                       Arma Branca
                     </label>
@@ -156,7 +156,7 @@
                 </td>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_7" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_7" type="checkbox" value="Arma de Fogo" class="form-control-custom">
                     <label for="c_med_7"> 
                       Arma de Fogo
                     </label>
@@ -164,7 +164,7 @@
                 </td>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_8" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_8" type="checkbox" value="Choque Elétrico" class="form-control-custom">
                     <label for="c_med_8"> 
                       Choque Elétrico
                     </label>
@@ -174,7 +174,7 @@
               <tr>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_9" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_9" type="checkbox" value="Envenenamento" class="form-control-custom">
                     <label for="c_med_9"> 
                       Envenenamento
                     </label>
@@ -182,7 +182,7 @@
                 </td>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_10" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_10" type="checkbox" value="Mal Súbito" class="form-control-custom">
                     <label for="c_med_10"> 
                       Mal Súbito
                     </label>
@@ -190,7 +190,7 @@
                 </td>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_11" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_11" type="checkbox" value="Outros" class="form-control-custom">
                     <label for="c_med_11"> 
                       Outros
                     </label>
@@ -198,7 +198,7 @@
                 </td>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_12" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_12" type="checkbox" value="Queda" class="form-control-custom">
                     <label for="c_med_12"> 
                       Queda
                     </label>
@@ -208,7 +208,7 @@
               <tr>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_13" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_13" type="checkbox" value="Queimadura" class="form-control-custom">
                     <label for="c_med_13"> 
                       Queimadura
                     </label>
@@ -216,7 +216,7 @@
                 </td>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_14" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_14" type="checkbox" value="Suicídio" class="form-control-custom">
                     <label for="c_med_14"> 
                       Suicídio
                     </label>
@@ -224,7 +224,7 @@
                 </td>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_15" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_15" type="checkbox" value="Urgência Clínica" class="form-control-custom">
                     <label for="c_med_15"> 
                       Urgência Clínica 
                     </label>
@@ -232,7 +232,7 @@
                 </td>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_16" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_16" type="checkbox" value="Agressão" class="form-control-custom">
                     <label for="c_med_16"> 
                       Agressão 
                     </label>
@@ -242,7 +242,7 @@
               <tr>
                 <td>
                   <div class="i-checks">
-                    <input id="c_med_17" type="checkbox" value="" class="form-control-custom">
+                    <input id="c_med_17" type="checkbox" value="Urgência Psiquiatra" class="form-control-custom">
                     <label for="c_med_17"> 
                       Urgência Psiquiatra
                     </label>
@@ -287,35 +287,40 @@
 
 @section('scripts')
 <script type="text/javascript">
-var atendimento = firebase.database().ref('ocorrencias/{{$key}}/atendimento');
-var base_ag = firebase.database().ref('fila_base/aguardando');
-var med_at = firebase.database().ref('fila_medico/atendendo');
+  var atendimento = firebase.database().ref('ocorrencias/{{$key}}/atendimento');
+  var base_ag = firebase.database().ref('fila_base/aguardando');
+  var med_at = firebase.database().ref('fila_medico/atendendo');
 
   banco.child('{{$key}}').once('value', snap2 => { 
     var object = snap2.val();
-      document.getElementById("municipio").innerText = object.localizacao.municipio;
-      document.getElementById("solicitante").innerText = object.solicitante;
-      document.getElementById("local").innerText = object.localizacao.local;
-      document.getElementById("ref").innerText = object.localizacao.referencia;
-      document.getElementById("zona").innerText = object.localizacao.zona;  
-      document.getElementById("tel").innerText = object.contato.telefone;
-      document.getElementById("tipo").innerText = object.tipo;
-      document.getElementById("paciente").innerText = object.paciente;
-    });
+    document.getElementById("municipio").innerText = object.localizacao.municipio;
+    document.getElementById("solicitante").innerText = object.solicitante;
+    document.getElementById("local").innerText = object.localizacao.local;
+    document.getElementById("ref").innerText = object.localizacao.referencia;
+    document.getElementById("zona").innerText = object.localizacao.zona;  
+    document.getElementById("tel").innerText = object.contato.telefone;
+    document.getElementById("tipo").innerText = object.tipo;
+    document.getElementById("paciente").innerText = object.paciente;
+  });
 
-    function medico_encaminhar(key){
-      atendimento.update({dados_clinicos:document.getElementById("dados_c").value,prioridade:document.getElementById("prioridade").value,dados_paciente:document.getElementById("dados_p").value});
-        banco.child('{{$key}}').update({situacao:"fila_base"});
-        med_at.child(key).remove();
-        base_ag.update({[key]:"true"});
-        window.location.assign("/medico_fila");
+  function medico_encaminhar(key){
+    var ocorrencia = "";
+    for (var i = 1; i < 18; i++) {
+      if ($('#c_med_'+i).is(":checked")){
+         ocorrencia += $('#c_med_'+i).val()+"; ";
+      }
+    }
+    atendimento.update({dados_clinicos:document.getElementById("dados_c").value,prioridade:document.getElementById("prioridade").value,dados_paciente:document.getElementById("dados_p").value,natureza_ocorrencia:ocorrencia.substring(0,ocorrencia.length - 2)});
+    banco.child('{{$key}}').update({situacao:"fila_base"});
+    med_at.child(key).remove();
+    base_ag.update({[key]:"true"});
+    window.location.assign("/medico_fila");
     }
 
-    function arquivar(key){
-      med_at.child(key).remove();
-      banco.child(key).update({situacao:"arquivada"});    
-    }
-  
+  function arquivar(key){
+    med_at.child(key).remove();
+    banco.child(key).update({situacao:"arquivada"});    
+  }  
 </script>
 @stop
 
