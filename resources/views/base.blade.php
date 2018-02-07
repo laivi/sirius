@@ -48,76 +48,94 @@
         </tbody>
       </table>
 
-      <a class="btn btn_repassar" data-toggle="modal" data-target=".bs-example-modal-sm-accept" ><i class="fa fa-check" aria-hidden="true"></i><br> Aceitar</a>
+      <a class="btn btn_info" data-toggle="modal" data-target=".bs-example-modal-sm-info" ><i class="fa fa-address-card"></i><br> Informações técnicas da ocorrência</a>
 
-      <div id="Aceitar_modal" class="modal fade bs-example-modal-sm-accept" tabindex="-1" role="dialog" aria-hidden="true">
+      <div id="info_modal" class="modal fade bs-example-modal-sm-info" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm">
-          <div class="modal-content" style="margin-left:-20vh;width: 80vh;height: 40vh;border-radius: 5px;">  
-            <div style="background:#0C9;color:white;width: 100%; text-align: center;">
-              <h3 style="font-size: 18px;padding: 10px">Aceitar Ocorrencia<h3>
-              </div>
-              <a class="btn btn_modal" id="btn_repassar">Aceitar</a>          
-            </div>
-          </div>  
-        </div>
+          <div class="modal-content" style="margin-left:-40vh;width:120vh;border-radius:5px;padding:10px;"> 
 
-        <a class="btn btn_arquivar"  data-toggle="modal" data-target=".bs-example-modal-sm"> <i class="fa fa-folder-open-o" aria-hidden="true"></i><br>Arquivar</a>
-
-        <div id="Arquivar_modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-sm">
-            <div class="modal-content" style="margin-left:-20vh;width: 80vh;height: 40vh;border-radius: 5px;">  
-              <div style="background: red;width: 100%; text-align: center;">
-                <h3 style="font-size: 18px;padding: 10px">Arquivar Ocorrência<h3>
-                </div>
-                <a class="btn btn_modal" id="btn_arquivar">Arquivar</a>             
-              </div>
-            </div>  
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6" style="float: right;margin-left:-5px;">
-        <!-- Daily Feed Widget-->
-        <div id="daily-feeds" class="card updates daily-feeds" style="max-height:85vh;height: 85vh">
-          <div class="breadcrumb-holder" ">
-            <ul class="breadcrumb">
-              <li class="breadcrumb-item" style="width: 100%;text-align: center;"><font style="font-size:17px;vertical-align: inherit;">Ocorrências Pendentes </font></li>
-              <div class="right-column">
-                <div class="badge badge-primary" id="num_element"></div>
-              </div>
-            </ul>
-          </div>   
-
-          <div id="feeds-box" role="tabpanel" class="collapse show"  style="overflow: auto;">
-            <div class="feed-box">
-              <ul class="feed-elements list-unstyled" id="list">
-                <!-- List-->
-                <div id="5"><!-- Nível de prioridade--></div>
-                <div id="4"><!-- Nível de prioridade--></div>
-                <div id="3"><!-- Nível de prioridade--></div>
-                <div id="2"><!-- Nível de prioridade--></div>
-                <div id="1"><!-- Nível de prioridade--></div>
+            <div class="breadcrumb-holder">
+              <div class="container-fluid">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item"><i class="fa fa-crosshairs" aria-hidden="true"></i><font style="font-size:17px;vertical-align: inherit;">Dados médicos</font></li>
                 </ul>
+              </div>
+            </div> 
+            <table class="table">
+              <tbody>      
+                <tr>
+                  <th scope="row">Dados clinicos:</th>
+                  <td id="dados_c">Sem dados cadastrados.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Natureza da ocrrência:</th>
+                  <td id="natureza">Sem dados cadastrados.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Dados sobre o paciente:</th>
+                  <td id="info">Sem dados cadastrados.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Prioridade:</th>
+                  <td id="prioridade">Sem dados cadastrados.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div style="width:100%">
+              <a class="btn btn_arquivar" id="btn_arquivar"  data-toggle="modal" data-target=".bs-example-modal-sm"> <i class="fa fa-folder-open-o" aria-hidden="true"></i><br>Arquivar</a>
+
+              <a class="btn btn_repassar" id="btn_repassar"  data-toggle="modal" data-target=".bs-example-modal-sm"> <i class="fa fa-folder-open-o" aria-hidden="true"></i><br>Aceitar</a>
             </div>
-          </div>
+      
+          </div>  
         </div>
       </div>
     </div>
+  </div>      
+
+  <div class="col-lg-4 col-md-6" style="float: right;margin-left:-5px;">
+    <!-- Daily Feed Widget-->
+    <div id="daily-feeds" class="card updates daily-feeds" style="max-height:85vh;height: 85vh">
+      <div class="breadcrumb-holder" ">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item" style="width: 100%;text-align: center;"><font style="font-size:17px;vertical-align: inherit;">Ocorrências Pendentes </font></li>
+          <div class="right-column">
+            <div class="badge badge-primary" id="num_element"></div>
+          </div>
+        </ul>
+      </div>   
+
+      <div id="feeds-box" role="tabpanel" class="collapse show"  style="overflow: auto;">
+        <div class="feed-box">
+          <ul class="feed-elements list-unstyled" id="list">
+            <!-- List-->
+            <div id="5"><!-- Nível de prioridade--></div>
+            <div id="4"><!-- Nível de prioridade--></div>
+            <div id="3"><!-- Nível de prioridade--></div>
+            <div id="2"><!-- Nível de prioridade--></div>
+            <div id="1"><!-- Nível de prioridade--></div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 @stop
 
 @section('scripts')
 
 <script type="text/javascript">
-    
- 
+
+
   var base_ag = firebase.database().ref('fila_base/aguardando');
   var base_at = firebase.database().ref('fila_base/atendendo');
   var base_en = firebase.database().ref('fila_base/encaminhado');
 
   // Insere o li(card) da ocorrencia na lista de espera da cenral 
   base_ag.on('child_added', snap => {
-    
+
     var key = snap.key;
     var value = snap.val();
 
@@ -154,17 +172,17 @@
       div_tempo.setAttribute('class', 'date star_line');
       for (var i = object.atendimento.prioridade -1; i >= 0; i--) {
        div_tempo.innerHTML += "<i class='fa fa-star'></i>";
-      }
+     }
 
-      new_li.appendChild(div_avo); 
-      div_avo.appendChild(div_pai);
-      div_avo.appendChild(div_tempo);
-      div_pai.appendChild(img);
-      div_pai.appendChild(div_filha);
-      div_filha.appendChild(strong_nome);
-      div_filha.appendChild(small_telefone);
-      div_filha.appendChild(div_neta);
-      div_neta.appendChild(small_hora);
+     new_li.appendChild(div_avo); 
+     div_avo.appendChild(div_pai);
+     div_avo.appendChild(div_tempo);
+     div_pai.appendChild(img);
+     div_pai.appendChild(div_filha);
+     div_filha.appendChild(strong_nome);
+     div_filha.appendChild(small_telefone);
+     div_filha.appendChild(div_neta);
+     div_neta.appendChild(small_hora);
       list.insertBefore(new_li, null);  // Insert <li> before the first child of <ul>
       $.playSound("http://toquesparabaixar.com/download2/iPhone_SMS_v2_www.ToquesParaBaixar.com.mp3");
       contarElementos();
@@ -191,7 +209,7 @@
   function arquivar(key){
     base_at.child(key).remove();
     banco.child(key).update({situacao:"arquivada"});
-    $('#Arquivar_modal').modal('hide'); 
+    $('#info_modal').modal('hide'); 
     
   }
   
@@ -199,7 +217,7 @@
     base_at.child(key).remove();
     base_en.update({[key]:"true"});;
     banco.child(key).update({situacao:"deslocando"});
-    $('#Aceitar_modal').modal('hide'); 
+    $('#info_modal').modal('hide'); 
   }
 
 </script>

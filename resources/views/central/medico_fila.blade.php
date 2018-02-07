@@ -79,14 +79,11 @@
       //contarElementos();
     });
   });
-
   // verifica quando a ocorrencia sair da fila de espera da central.
- 
-  
   function medico_atendendo(key){
     med_ag.child(key).remove();
     med_at.update({[key]:"true"});
-    window.location.assign("/ocorrencia/"+key+"/show");
+    window.location.assign("/ocorrencia_med/"+key+"/show");
   }
 
 </script>

@@ -27,6 +27,26 @@ function select_li_base(object, key) {
 	document.getElementById("ref").innerText = object.localizacao.referencia;
 	document.getElementById("zona").innerText = object.localizacao.zona;	
 	document.getElementById("paciente").innerText = object.paciente;
+	document.getElementById("info").innerText = object.atendimento.dados_paciente;
+    document.getElementById("natureza").innerText = object.atendimento.natureza_ocorrencia;
+    document.getElementById("dados_c").innerText = object.atendimento.dados_clinicos;
+      switch(object.atendimento.prioridade){
+        case "1":
+          document.getElementById("prioridade").innerText = "Emergência" ;
+          break;
+        case "2":
+          document.getElementById("prioridade").innerText = "Muito Urgente";
+          break;
+        case "3":
+          document.getElementById("prioridade").innerText = "Urgente" ;
+          break;
+        case "4":
+          document.getElementById("prioridade").innerText = "Pouco Urgente" ;
+          break;
+        case "5":
+          document.getElementById("prioridade").innerText = "Nada Urgente";
+          break;        
+      }
 	var long = object.localizacao.lgt;
 	var lat = object.localizacao.lat;
 	map(long,lat,key);

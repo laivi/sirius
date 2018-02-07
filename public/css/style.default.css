@@ -2961,6 +2961,13 @@ font-size: 20px;
   height: 55px;
   padding: 5px;
 }
+.btn_info{
+  width: 100%;
+  background:#4385C7;
+  height: 55px;
+  padding: 5px;
+  color: white!important;
+}
 .btn_arquivar{
   width: 49.5%;
   margin-bottom: -10px
@@ -3013,5 +3020,4 @@ font-size: 20px;
     background-color: #8c8b8b;
     width: 90%;
     margin-left: 5%;
-
 }
