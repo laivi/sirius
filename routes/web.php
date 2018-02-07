@@ -26,4 +26,9 @@ Route::get('/base', function () {
     return view('base');
 });
 
-Route::get('/ocorrencia/{key}/show', 'OcorrenciaController@show'); 
+Route::get('/historico', function () {
+    return view('ocorrencia/historico');
+});
+
+Route::get('/ocorrencia_med/{key}/show', 'OcorrenciaController@show_med'); 
+Route::get('/ocorrencia/{key}/show', 'OcorrenciaController@show');

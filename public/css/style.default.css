@@ -1115,7 +1115,7 @@ nav.navbar a.menu-btn:hover {
 * ==========================================================
 */
 footer.main-footer {
-  position: absolute;
+  position:fixed;
   width: 100%;
   bottom: 0;
   background:gainsboro;
@@ -2987,4 +2987,31 @@ font-size: 20px;
 .line:focus { 
   outline: none;
   border-color: red;
+}
+
+.alert{
+    margin-top: 5px;
+    border-radius: 5px;
+    padding-left: 8px!important;
+    padding-right: 8px!important;
+    padding: 1px;
+    text-align: center;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+.alert.medico{
+  background: red;
+}
+.alert.base{
+  background: blue;
+}
+.alert.central{
+  background: green;
+}
+.btn-table{
+    background-color: #8c8b8b;
+    width: 90%;
+    margin-left: 5%;
+
 }
