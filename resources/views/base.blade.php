@@ -1,22 +1,21 @@
 @extends('principal')
 @section('conteudo')
 
-<div class="col-lg-13" style="padding: 10px;min-height: 80vh">
+<div class="col-lg-13 col">
 
-  <div class="card col-lg-8 col-md-6" style="float:left;min-height: 85vh; padding: 10px">
+  <div class="card col-lg-8 col-md-6 col" style="float:left;">
     <div class="breadcrumb-holder">
       <div class="container-fluid">
         <ul class="breadcrumb">
-          <li class="breadcrumb-item"><i class="fa fa-crosshairs" aria-hidden="true"></i><font style="font-size:17px;vertical-align: inherit;">Monitoramento</font></li>
+          <li class="breadcrumb-item"><i class="fa fa-crosshairs" aria-hidden="true"></i><font class="title_bar">Monitoramento</font></li>
         </ul>
       </div>
     </div>   
     <div id="map"></div>
-    
     <div id="cab_dados" class="breadcrumb-holder none " style="margin-top: 15px" >
       <div class="container-fluid">
         <ul class="breadcrumb">
-          <li class="breadcrumb-item"><i class="fa fa-database" aria-hidden="true"></i><font style="font-size:17px;vertical-align: inherit;">Dados da ocorrência</font></li>
+          <li class="breadcrumb-item"><i class="fa fa-database" aria-hidden="true"></i><font class="title_bar">Dados da ocorrência</font></li>
         </ul>
       </div>
     </div>
@@ -52,12 +51,11 @@
 
       <div id="info_modal" class="modal fade bs-example-modal-sm-info" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm">
-          <div class="modal-content" style="margin-left:-40vh;width:120vh;border-radius:5px;padding:10px;"> 
-
+          <div class="modal_content_c"> 
             <div class="breadcrumb-holder">
               <div class="container-fluid">
                 <ul class="breadcrumb">
-                  <li class="breadcrumb-item"><i class="fa fa-crosshairs" aria-hidden="true"></i><font style="font-size:17px;vertical-align: inherit;">Dados médicos</font></li>
+                  <li class="breadcrumb-item"><i class="fa fa-crosshairs" aria-hidden="true"></i><font class="title_bar">Dados médicos</font></li>
                 </ul>
               </div>
             </div> 
@@ -87,19 +85,19 @@
 
               <a class="btn btn_repassar" id="btn_repassar"  data-toggle="modal" data-target=".bs-example-modal-sm"> <i class="fa fa-folder-open-o" aria-hidden="true"></i><br>Aceitar</a>
             </div>
-      
+
           </div>  
         </div>
       </div>
     </div>
   </div>      
 
-  <div class="col-lg-4 col-md-6" style="float: right;margin-left:-5px;">
+  <div class="col-lg-4 col-md-6 c-float-m-5">
     <!-- Daily Feed Widget-->
-    <div id="daily-feeds" class="card updates daily-feeds" style="max-height:85vh;height: 85vh">
+    <div id="daily-feeds" class="card updates daily-feeds">
       <div class="breadcrumb-holder" ">
         <ul class="breadcrumb">
-          <li class="breadcrumb-item" style="width: 100%;text-align: center;"><font style="font-size:17px;vertical-align: inherit;">Ocorrências Pendentes </font></li>
+          <li class="breadcrumb-item ctr"><font class="breadcrumb-text">Ocorrências Pendentes </font></li>
           <div class="right-column">
             <div class="badge badge-primary" id="num_element"></div>
           </div>

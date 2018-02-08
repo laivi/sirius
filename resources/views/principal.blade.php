@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Sirirus</title>
+    <title>Sirius</title>
 
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
 
@@ -23,7 +23,8 @@
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="{{ asset('css/style.default.css')}}" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css')}}"> 
+    <link rel="stylesheet" href="{{ asset('css/form-elements.css')}}">
     <!-- Favicon
     <link rel="shortcut icon" href="img/favicon.ico">    
     --> 
@@ -46,8 +47,9 @@
     <script src="{{ asset('vendor/jquery.cookie/jquery.cookie.js')}}"> </script>
     <script src="{{ asset('vendor/jquery-validation/jquery.validate.min.js')}}"></script>
     <script src="{{ asset('vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js')}}"></script>
-    <!-- Main File-->
     <script src="{{ asset('js/front.js')}}"></script> 
+    <script src="{{ asset('js/jquery.backstretch.js')}}"></script>
+    <script src="{{ asset('js/scripts.js')}}"></script>
     <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
     <script src="{{ asset('js/firebase.js')}}"></script>

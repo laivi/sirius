@@ -6,6 +6,7 @@ function select_li(object, key) {
 	document.getElementById('btn_arquivar').setAttribute('onClick','arquivar('+JSON.stringify(key)+')');
 	document.getElementById('map').setAttribute('style', 'height: 35vh;');
 	document.getElementById("solicitante").innerText = object.solicitante;
+  document.getElementById("key").innerText = key;
 	document.getElementById("ref").innerText = object.localizacao.referencia;
 	document.getElementById("zona").innerText = object.localizacao.zona;	
 	document.getElementById("tel").innerText = object.contato.telefone;

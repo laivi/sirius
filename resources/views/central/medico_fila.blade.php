@@ -2,10 +2,12 @@
 @section('conteudo')
 
         <!-- Daily Feed Widget-->
-        <div id="daily-feeds" class="card updates daily-feeds" style="margin-top: 20px;margin-left: 30%;max-width: 40%; max-height:70vh;height: 70vh">
+     
+       <div class="col c_ol">  
+        <div id="daily-feeds" class="card updates daily-feeds">
           <div class="breadcrumb-holder" ">
             <ul class="breadcrumb">
-              <li class="breadcrumb-item" style="width: 100%;text-align: center;"><font style="font-size:17px;vertical-align: inherit;">Ocorrências em espera</font></li>
+              <li class="breadcrumb-item"><font class="breadcrumb-text"> Ocorrências em espera</font></li>
               <div class="right-column">
                 <div class="badge badge-primary" id="num_element"></div>
               </div>
@@ -21,6 +23,8 @@
           </div>
         </div>
       </div>
+    </div>
+
 @stop
 
 @section('scripts')

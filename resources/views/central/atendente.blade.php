@@ -1,13 +1,13 @@
 @extends('principal')
 @section('conteudo')
 
-<div class="col-lg-13" style="padding: 10px;min-height: 80vh">
+<div class="col-lg-13 col">
 
-  <div class="card col-lg-8 col-md-6" style="float:left;min-height: 85vh; padding: 10px">
+  <div class="card col-lg-8 col-md-6 col" style="float:left;">
     <div class="breadcrumb-holder">
       <div class="container-fluid">
         <ul class="breadcrumb">
-          <li class="breadcrumb-item"><i class="fa fa-crosshairs" aria-hidden="true"></i><font style="font-size:17px;vertical-align: inherit;">Monitoramento</font></li>
+          <li class="breadcrumb-item"><i class="fa fa-crosshairs" aria-hidden="true"></i><font class="title_bar">Monitoramento</font></li>
         </ul>
       </div>
     </div>   
@@ -15,13 +15,13 @@
     <div id="cab_dados" class="breadcrumb-holder none " style="margin-top: 15px" >
       <div class="container-fluid">
         <ul class="breadcrumb">
-          <li class="breadcrumb-item"><i class="fa fa-database" aria-hidden="true"></i><font style="font-size:17px;vertical-align: inherit;">Dados da ocorrência</font></li>
+          <li class="breadcrumb-item"><i class="fa fa-database" aria-hidden="true"></i><font class="title_bar">Dados da ocorrência</font></li>
         </ul>
       </div>
     </div>
 
     <div id="body_dados" class="card-body none">
-      <table class="table table-hover">
+      <table class="table">
 
         <tbody>
           <tr>
@@ -57,9 +57,9 @@
 
       <div id="Repassar_modal" class="modal fade bs-example-modal-sm-accept" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm">
-          <div class="modal-content" style="margin-left:-20vh;width: 80vh;height: 40vh;border-radius: 5px;background: #f5f7fa">  
-            <div style="background:#0C9;color:white;width: 100%; text-align: center;">
-              <h3 style="font-size: 18px;padding: 10px">Repassar ocorrencia<h3>
+          <div class="modal-content">  
+            <div class="modal-head-green">
+              <h3 class="title_bar">Repassar ocorrencia<h3>
               </div>
               <a class="btn btn_modal" id="btn_repassar">Repassar</a>          
             </div>
@@ -70,10 +70,19 @@
 
         <div id="Arquivar_modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog modal-sm">
-            <div class="modal-content" style="margin-left:-20vh;width: 80vh;height: 40vh;border-radius: 5px;background: #f5f7fa">  
-              <div style="background: red;width: 100%; text-align: center;">
-                <h3 style="font-size: 18px;padding: 10px">Arquivar ocorrencia<h3>
+            <div class="modal-content">  
+              <div class="modal-head-red">
+                <h3 class="title_bar">Arquivar ocorrencia<h3>
                 </div>
+                  <div class="modal-body">
+                    <h4>Deseja arquivar a ocorrênca de nº<font id="key">  </font>?</h4>
+                    <hr>
+                    <label>Arquivamento por:</label>
+                    <select class="form-control">
+                      <option>Trote</option>
+                      <option>Falta de comunicação</option>
+                    </select>
+                  </div>
                 <a class="btn btn_modal" id="btn_arquivar">Arquivar</a>             
               </div>
             </div>  
@@ -81,12 +90,12 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6" style="float: right;margin-left:-5px;">
+      <div class="col-lg-4 col-md-6 c-float-m-5">
         <!-- Daily Feed Widget-->
-        <div id="daily-feeds" class="card updates daily-feeds" style="max-height:85vh;height: 85vh">
+        <div id="daily-feeds" class="card updates daily-feeds">
           <div class="breadcrumb-holder" ">
-            <ul class="breadcrumb">
-              <li class="breadcrumb-item" style="width: 100%;text-align: center;"><font style="font-size:17px;vertical-align: inherit;">Atendimentos Pendentes </font></li>
+            <ul class="breadcrumb ctr">
+              <li class="breadcrumb-item ctr"><font class="breadcrumb-text">Atendimentos Pendentes </font></li>
               <div class="right-column">
                 <div class="badge badge-primary" id="num_element"></div>
               </div>
